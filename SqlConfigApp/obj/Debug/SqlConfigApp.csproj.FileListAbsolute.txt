@@ -1,0 +1,196 @@
+D:\Selim\Programs\Sports Hub Application\SqlConfigApp\bin\Debug\SqlConfigApp.exe.config
+D:\Selim\Programs\Sports Hub Application\SqlConfigApp\bin\Debug\SqlConfigApp.exe
+D:\Selim\Programs\Sports Hub Application\SqlConfigApp\bin\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\Sports Hub Application\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.AssemblyReference.cache
+D:\Selim\Programs\Sports Hub Application\SqlConfigApp\obj\Debug\SqlConfigApp.Properties.Resources.resources
+D:\Selim\Programs\Sports Hub Application\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.GenerateResource.cache
+D:\Selim\Programs\Sports Hub Application\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.CoreCompileInputs.cache
+D:\Selim\Programs\Sports Hub Application\SqlConfigApp\obj\Debug\SqlConfigApp.exe
+D:\Selim\Programs\Sports Hub Application\SqlConfigApp\obj\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\Sports Hub Application\SqlConfigApp\obj\Debug\SqlConfigApp.Form1.resources
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\SqlConfigApp.exe.config
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\SqlConfigApp.exe
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.AssemblyReference.cache
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\obj\Debug\SqlConfigApp.Form1.resources
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\obj\Debug\SqlConfigApp.Properties.Resources.resources
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.GenerateResource.cache
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.CoreCompileInputs.cache
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\obj\Debug\SqlConfigApp.exe
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\obj\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\ClosedXML.dll
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\ExcelNumberFormat.dll
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\Irony.dll
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\SixLabors.Fonts.dll
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\System.Buffers.dll
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\System.IO.Packaging.dll
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\System.Memory.dll
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\System.Numerics.Vectors.dll
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\XLParser.dll
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\ClosedXML.xml
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\ExcelNumberFormat.xml
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\SixLabors.Fonts.xml
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\System.Buffers.xml
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\System.IO.Packaging.xml
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\System.Memory.xml
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\System.Numerics.Vectors.xml
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Selim\Programs\GYM-APP-DAR-ELDYAFA\SqlConfigApp\obj\Debug\SqlConfi.E5645F07.Up2Date
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\SqlConfigApp.exe.config
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\SqlConfigApp.exe
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\ClosedXML.dll
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\ExcelNumberFormat.dll
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\Irony.dll
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\SixLabors.Fonts.dll
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\System.Buffers.dll
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\System.IO.Packaging.dll
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\System.Memory.dll
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\System.Numerics.Vectors.dll
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\XLParser.dll
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\ClosedXML.xml
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\ExcelNumberFormat.xml
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\SixLabors.Fonts.xml
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\System.Buffers.xml
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\System.IO.Packaging.xml
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\System.Memory.xml
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\System.Numerics.Vectors.xml
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.AssemblyReference.cache
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\obj\Debug\SqlConfigApp.Form1.resources
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\obj\Debug\SqlConfigApp.Properties.Resources.resources
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.GenerateResource.cache
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.CoreCompileInputs.cache
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\obj\Debug\SqlConfi.E5645F07.Up2Date
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\obj\Debug\SqlConfigApp.exe
+D:\Selim\Programs\Malaab App\Malaab App\SqlConfigApp\obj\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\SqlConfigApp.exe.config
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\SqlConfigApp.exe
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\ClosedXML.dll
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\ExcelNumberFormat.dll
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\Irony.dll
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\SixLabors.Fonts.dll
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\System.Buffers.dll
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\System.IO.Packaging.dll
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\System.Memory.dll
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\System.Numerics.Vectors.dll
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\XLParser.dll
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\ClosedXML.xml
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\ExcelNumberFormat.xml
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\SixLabors.Fonts.xml
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\System.Buffers.xml
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\System.IO.Packaging.xml
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\System.Memory.xml
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\System.Numerics.Vectors.xml
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.AssemblyReference.cache
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\obj\Debug\SqlConfigApp.Form1.resources
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\obj\Debug\SqlConfigApp.Properties.Resources.resources
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.GenerateResource.cache
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.CoreCompileInputs.cache
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\obj\Debug\SqlConfi.E5645F07.Up2Date
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\obj\Debug\SqlConfigApp.exe
+D:\Selim\Programs\Malaab App\MixedGym\SqlConfigApp\obj\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\SqlConfigApp.exe.config
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\SqlConfigApp.exe
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\ClosedXML.dll
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\ExcelNumberFormat.dll
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\Irony.dll
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\SixLabors.Fonts.dll
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\System.Buffers.dll
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\System.IO.Packaging.dll
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\System.Memory.dll
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\System.Numerics.Vectors.dll
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\XLParser.dll
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\ClosedXML.xml
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\ExcelNumberFormat.xml
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\SixLabors.Fonts.xml
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\System.Buffers.xml
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\System.IO.Packaging.xml
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\System.Memory.xml
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\System.Numerics.Vectors.xml
+D:\Selim\Programs\MixedGym\SqlConfigApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Selim\Programs\MixedGym\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.AssemblyReference.cache
+D:\Selim\Programs\MixedGym\SqlConfigApp\obj\Debug\SqlConfigApp.Form1.resources
+D:\Selim\Programs\MixedGym\SqlConfigApp\obj\Debug\SqlConfigApp.Properties.Resources.resources
+D:\Selim\Programs\MixedGym\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.GenerateResource.cache
+D:\Selim\Programs\MixedGym\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.CoreCompileInputs.cache
+D:\Selim\Programs\MixedGym\SqlConfigApp\obj\Debug\SqlConfi.E5645F07.Up2Date
+D:\Selim\Programs\MixedGym\SqlConfigApp\obj\Debug\SqlConfigApp.exe
+D:\Selim\Programs\MixedGym\SqlConfigApp\obj\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\SqlConfigApp.exe.config
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\SqlConfigApp.exe
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\ClosedXML.dll
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\ExcelNumberFormat.dll
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\Irony.dll
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\SixLabors.Fonts.dll
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\System.Buffers.dll
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\System.IO.Packaging.dll
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\System.Memory.dll
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\System.Numerics.Vectors.dll
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\XLParser.dll
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\ClosedXML.xml
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\ExcelNumberFormat.xml
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\SixLabors.Fonts.xml
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\System.Buffers.xml
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\System.IO.Packaging.xml
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\System.Memory.xml
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\System.Numerics.Vectors.xml
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.AssemblyReference.cache
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\obj\Debug\SqlConfigApp.Form1.resources
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\obj\Debug\SqlConfigApp.Properties.Resources.resources
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.GenerateResource.cache
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.CoreCompileInputs.cache
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\obj\Debug\SqlConfi.E5645F07.Up2Date
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\obj\Debug\SqlConfigApp.exe
+D:\Selim\Programs\MixedGym\MixedGym-Application\SqlConfigApp\obj\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\SqlConfigApp.exe.config
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\SqlConfigApp.exe
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\ClosedXML.dll
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\ExcelNumberFormat.dll
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\Irony.dll
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\SixLabors.Fonts.dll
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\System.Buffers.dll
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\System.IO.Packaging.dll
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\System.Memory.dll
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\System.Numerics.Vectors.dll
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\XLParser.dll
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\ClosedXML.xml
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\ExcelNumberFormat.xml
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\SixLabors.Fonts.xml
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\System.Buffers.xml
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\System.IO.Packaging.xml
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\System.Memory.xml
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\System.Numerics.Vectors.xml
+D:\Selim\Programs\Private Pool\SqlConfigApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Selim\Programs\Private Pool\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.AssemblyReference.cache
+D:\Selim\Programs\Private Pool\SqlConfigApp\obj\Debug\SqlConfigApp.Form1.resources
+D:\Selim\Programs\Private Pool\SqlConfigApp\obj\Debug\SqlConfigApp.Properties.Resources.resources
+D:\Selim\Programs\Private Pool\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.GenerateResource.cache
+D:\Selim\Programs\Private Pool\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.CoreCompileInputs.cache
+D:\Selim\Programs\Private Pool\SqlConfigApp\obj\Debug\SqlConfi.E5645F07.Up2Date
+D:\Selim\Programs\Private Pool\SqlConfigApp\obj\Debug\SqlConfigApp.exe
+D:\Selim\Programs\Private Pool\SqlConfigApp\obj\Debug\SqlConfigApp.pdb
