@@ -27,9 +27,9 @@ public static class DatabaseConfig
 
 
 
-             // connectionString = $"Data Source=DESKTOP-64N23O5;Initial Catalog=PrivatePoolDB;Integrated Security=True;Encrypt=False";
+                //connectionString = $"Data Source=DESKTOP-64N23O5;Initial Catalog=PrivatePoolDB;Integrated Security=True;Encrypt=False";
 
-              connectionString = $"Data Source={serverName};Initial Catalog=PrivatePoolDB;User Id={username};Password={password};Encrypt=False";
+                connectionString = $"Data Source={serverName};Initial Catalog=PrivatePoolDB;User Id={username};Password={password};Encrypt=False";
             }
             else
             {
@@ -43,6 +43,8 @@ public static class DatabaseConfig
 
 
     }
+
+
 
 
 

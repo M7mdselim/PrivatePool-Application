@@ -12,25 +12,26 @@ namespace Private_Pool_Application
             this.transactionsGridView = new System.Windows.Forms.DataGridView();
             this.titleLabel = new System.Windows.Forms.Label();
             this.PrintButton = new System.Windows.Forms.Button();
-            this.backButton = new System.Windows.Forms.Button();
             this.ExportToExcelButton = new System.Windows.Forms.Button();
             this.CashierNametxt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.backButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.transactionsGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // datePicker
             // 
-            this.datePicker.Location = new System.Drawing.Point(486, 552);
+            this.datePicker.Location = new System.Drawing.Point(410, 538);
             this.datePicker.Name = "datePicker";
             this.datePicker.Size = new System.Drawing.Size(218, 20);
             this.datePicker.TabIndex = 0;
             // 
             // loadReportButton
             // 
-            this.loadReportButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.loadReportButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadReportButton.ForeColor = System.Drawing.Color.IndianRed;
-            this.loadReportButton.Location = new System.Drawing.Point(722, 529);
+            this.loadReportButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.loadReportButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.loadReportButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
+            this.loadReportButton.Location = new System.Drawing.Point(722, 515);
             this.loadReportButton.Name = "loadReportButton";
             this.loadReportButton.Size = new System.Drawing.Size(177, 65);
             this.loadReportButton.TabIndex = 1;
@@ -43,10 +44,10 @@ namespace Private_Pool_Application
             this.transactionsGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.transactionsGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.transactionsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.transactionsGridView.Location = new System.Drawing.Point(-2, 86);
+            this.transactionsGridView.Location = new System.Drawing.Point(12, 86);
             this.transactionsGridView.Name = "transactionsGridView";
             this.transactionsGridView.RowTemplate.Height = 24;
-            this.transactionsGridView.Size = new System.Drawing.Size(912, 407);
+            this.transactionsGridView.Size = new System.Drawing.Size(898, 407);
             this.transactionsGridView.TabIndex = 2;
             this.transactionsGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.transactionsGridView_CellContentClick);
             this.transactionsGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.transactionsGridView_CellDoubleClick);
@@ -55,45 +56,31 @@ namespace Private_Pool_Application
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.titleLabel.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.ForeColor = System.Drawing.Color.Red;
-            this.titleLabel.Location = new System.Drawing.Point(347, 9);
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.titleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.titleLabel.Location = new System.Drawing.Point(351, -3);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(203, 68);
+            this.titleLabel.Size = new System.Drawing.Size(186, 33);
             this.titleLabel.TabIndex = 3;
-            this.titleLabel.Text = "تقرير كاشير يومي \r\n[Private Pool]";
+            this.titleLabel.Text = "تقرير كاشير يومي";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PrintButton
             // 
-            this.PrintButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PrintButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrintButton.ForeColor = System.Drawing.Color.IndianRed;
-            this.PrintButton.Location = new System.Drawing.Point(12, 529);
+            this.PrintButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.PrintButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.PrintButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
+            this.PrintButton.Location = new System.Drawing.Point(12, 515);
             this.PrintButton.Name = "PrintButton";
             this.PrintButton.Size = new System.Drawing.Size(177, 65);
             this.PrintButton.TabIndex = 4;
-            this.PrintButton.Text = "طباعه";
+            this.PrintButton.Text = "طباعة";
             this.PrintButton.UseVisualStyleBackColor = false;
             this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
             // 
-            // backButton
-            // 
-            this.backButton.BackColor = System.Drawing.Color.Black;
-            this.backButton.BackgroundImage = global::Private_Pool_Application.Properties.Resources._153_1531682_open_red_back_button_png;
-            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.backButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.backButton.ForeColor = System.Drawing.Color.IndianRed;
-            this.backButton.Location = new System.Drawing.Point(12, 12);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(70, 56);
-            this.backButton.TabIndex = 21;
-            this.backButton.UseVisualStyleBackColor = false;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
-            // 
             // ExportToExcelButton
             // 
-            this.ExportToExcelButton.Location = new System.Drawing.Point(12, 499);
+            this.ExportToExcelButton.Location = new System.Drawing.Point(300, 538);
             this.ExportToExcelButton.Name = "ExportToExcelButton";
             this.ExportToExcelButton.Size = new System.Drawing.Size(70, 23);
             this.ExportToExcelButton.TabIndex = 22;
@@ -111,9 +98,38 @@ namespace Private_Pool_Application
             this.CashierNametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.CashierNametxt.TextChanged += new System.EventHandler(this.CashierNametxt_TextChanged);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.label1.Location = new System.Drawing.Point(370, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 34);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "Mixed GYM";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.Color.Transparent;
+            this.backButton.BackgroundImage = global::Private_Pool_Application.Properties.Resources.icons8_back_button_502;
+            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.backButton.ForeColor = System.Drawing.Color.IndianRed;
+            this.backButton.Location = new System.Drawing.Point(12, 12);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(70, 68);
+            this.backButton.TabIndex = 21;
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
             // CashierDailyReport
             // 
-            this.ClientSize = new System.Drawing.Size(922, 609);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(922, 601);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.CashierNametxt);
             this.Controls.Add(this.ExportToExcelButton);
             this.Controls.Add(this.backButton);
@@ -141,5 +157,6 @@ namespace Private_Pool_Application
         private Button backButton;
         private Button ExportToExcelButton;
         private TextBox CashierNametxt;
+        private Label label1;
     }
 }

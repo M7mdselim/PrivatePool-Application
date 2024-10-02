@@ -19,18 +19,22 @@ namespace Private_Pool_Application
         private ControlInfo[] _controlsInfo;
 
         private string _username;
-
-
-       
+        private string ConnectionString;
 
        
+           
 
-        public DailyReport(string username)
+
+
+
+
+            public DailyReport(string username)
         {
 
 
 
             InitializeComponent();
+            ConnectionString = "Data Source=192.168.50.5;Initial Catalog=PrivatePoolDB;User Id=sa;Password=comsys@123;Encrypt=False";
             // Store initial form size
             _initialFormWidth = this.Width;
             _initialFormHeight = this.Height;
@@ -63,12 +67,14 @@ namespace Private_Pool_Application
         T.UserName,
         T.CheckNumber,
         T.SportName,
-        T.SportPrice AS SportPrice,
+        T.SportPrice,  -- This column now reflects the correct price based on user category
         T.Category,
         T.MobileNumber,
         T.AmountPaid,
         T.RemainingAmount,
-        T.DiscountPercentage AS DiscountPercentage,
+        T.DiscountPercentage,
+        T.VATAmount,  -- Already calculated in the view
+        T.TotalPriceWithVAT,  -- Total price including VAT (with discount applied)
         T.DateAndTime,
         T.CashierName,
         T.Notes
@@ -76,21 +82,21 @@ namespace Private_Pool_Application
         vw_TransactionReport T
     WHERE 
         CAST(T.DateAndTime AS DATE) = @Date
-
     UNION ALL
-
     SELECT 
         NULL AS TransactionID,
         NULL AS UserID,
         'Total' AS UserName,
         NULL AS CheckNumber,
         NULL AS SportName,
-        NULL AS SportPrice,
+       SUM(T.SportPrice) AS SportPrice,
         NULL AS Category,
         NULL AS MobileNumber,
         SUM(T.AmountPaid) AS AmountPaid,
         SUM(T.RemainingAmount) AS RemainingAmount,
         NULL AS DiscountPercentage,
+        SUM(T.VATAmount) AS VATAmount,  -- Sum VAT for the total row
+        SUM(T.TotalPriceWithVAT) AS TotalPriceWithVAT,  -- Sum TotalPriceWithVAT for the total row
         NULL AS DateAndTime,
         NULL AS CashierName,
         NULL AS Notes
@@ -128,11 +134,38 @@ namespace Private_Pool_Application
                             {
                                 transactionsGridView.Columns["SportPrice"].HeaderText = "Sport Price";
                             }
+                            if (transactionsGridView.Columns.Contains("VATAmount"))
+                            {
+                                transactionsGridView.Columns["VATAmount"].HeaderText = "VAT Amount";
+                            }
+                            if (transactionsGridView.Columns.Contains("TotalPriceWithVAT"))
+                            {
+                                transactionsGridView.Columns["TotalPriceWithVAT"].HeaderText = "Total Price (Including VAT)";
+
+                                // Set the format to display two decimal places
+                                transactionsGridView.Columns["TotalPriceWithVAT"].DefaultCellStyle.Format = "F2";
+                            }
 
                             // Ensure UserID column is hidden
                             if (transactionsGridView.Columns.Contains("UserID"))
                             {
                                 transactionsGridView.Columns["UserID"].Visible = false;
+                            }
+
+                            // Set read-only columns
+                            foreach (DataGridViewColumn column in transactionsGridView.Columns)
+                            {
+                                // Make specific columns read-only
+                                if (column.Name == "UserName" ||
+                                    column.Name == "SportName" ||
+                                    column.Name == "SportPrice" ||
+                                    column.Name == "AmountPaid" ||
+                                    column.Name == "RemainingAmount" ||
+                                    column.Name == "VATAmount" ||
+                                    column.Name == "TotalPriceWithVAT")
+                                {
+                                    column.ReadOnly = true;
+                                }
                             }
                         }
                     }
@@ -158,7 +191,7 @@ namespace Private_Pool_Application
                 {
                     int userId = Convert.ToInt32(transactionsGridView.Rows[e.RowIndex].Cells["UserID"].Value);
 
-                    using (SqlConnection connection = new SqlConnection(DatabaseConfig.connectionString))
+                    using (SqlConnection connection = new SqlConnection(ConnectionString))
                     {
                         Image profileImage = await GetUserProfileImageAsync(userId, connection);
 

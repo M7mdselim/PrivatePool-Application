@@ -41,22 +41,22 @@
             // 
             // CashierFormbtn
             // 
-            this.CashierFormbtn.BackColor = System.Drawing.Color.Black;
-            this.CashierFormbtn.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.CashierFormbtn.ForeColor = System.Drawing.Color.IndianRed;
+            this.CashierFormbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.CashierFormbtn.Font = new System.Drawing.Font("PT Bold Heading", 15.75F);
+            this.CashierFormbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.CashierFormbtn.Location = new System.Drawing.Point(35, 17);
             this.CashierFormbtn.Name = "CashierFormbtn";
             this.CashierFormbtn.Size = new System.Drawing.Size(287, 76);
             this.CashierFormbtn.TabIndex = 16;
-            this.CashierFormbtn.Text = "اضافه - بحث";
+            this.CashierFormbtn.Text = "إضافة - بحث";
             this.CashierFormbtn.UseVisualStyleBackColor = false;
             this.CashierFormbtn.Click += new System.EventHandler(this.CashierFormbtn_Click);
             // 
             // DailyReportbtn
             // 
-            this.DailyReportbtn.BackColor = System.Drawing.Color.Black;
-            this.DailyReportbtn.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.DailyReportbtn.ForeColor = System.Drawing.Color.IndianRed;
+            this.DailyReportbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.DailyReportbtn.Font = new System.Drawing.Font("PT Bold Heading", 15.75F);
+            this.DailyReportbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.DailyReportbtn.Location = new System.Drawing.Point(35, 99);
             this.DailyReportbtn.Name = "DailyReportbtn";
             this.DailyReportbtn.Size = new System.Drawing.Size(287, 76);
@@ -67,9 +67,9 @@
             // 
             // MonthlyReportbtn
             // 
-            this.MonthlyReportbtn.BackColor = System.Drawing.Color.Black;
-            this.MonthlyReportbtn.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.MonthlyReportbtn.ForeColor = System.Drawing.Color.IndianRed;
+            this.MonthlyReportbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.MonthlyReportbtn.Font = new System.Drawing.Font("PT Bold Heading", 15.75F);
+            this.MonthlyReportbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.MonthlyReportbtn.Location = new System.Drawing.Point(35, 181);
             this.MonthlyReportbtn.Name = "MonthlyReportbtn";
             this.MonthlyReportbtn.Size = new System.Drawing.Size(287, 76);
@@ -80,9 +80,9 @@
             // 
             // CustomerReportBtn
             // 
-            this.CustomerReportBtn.BackColor = System.Drawing.Color.Black;
-            this.CustomerReportBtn.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.CustomerReportBtn.ForeColor = System.Drawing.Color.IndianRed;
+            this.CustomerReportBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.CustomerReportBtn.Font = new System.Drawing.Font("PT Bold Heading", 15.75F);
+            this.CustomerReportBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.CustomerReportBtn.Location = new System.Drawing.Point(35, 263);
             this.CustomerReportBtn.Name = "CustomerReportBtn";
             this.CustomerReportBtn.Size = new System.Drawing.Size(287, 76);
@@ -93,10 +93,10 @@
             // 
             // exitButton
             // 
-            this.exitButton.BackColor = System.Drawing.Color.Black;
-            this.exitButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.exitButton.ForeColor = System.Drawing.Color.IndianRed;
-            this.exitButton.Location = new System.Drawing.Point(108, 416);
+            this.exitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.exitButton.Font = new System.Drawing.Font("PT Bold Heading", 15.75F);
+            this.exitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
+            this.exitButton.Location = new System.Drawing.Point(116, 416);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(130, 52);
             this.exitButton.TabIndex = 20;
@@ -106,23 +106,23 @@
             // 
             // signupbtn
             // 
-            this.signupbtn.BackColor = System.Drawing.Color.Black;
-            this.signupbtn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.signupbtn.ForeColor = System.Drawing.Color.IndianRed;
-            this.signupbtn.Location = new System.Drawing.Point(187, 474);
+            this.signupbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.signupbtn.Font = new System.Drawing.Font("PT Bold Heading", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.signupbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
+            this.signupbtn.Location = new System.Drawing.Point(190, 474);
             this.signupbtn.Name = "signupbtn";
-            this.signupbtn.Size = new System.Drawing.Size(125, 35);
+            this.signupbtn.Size = new System.Drawing.Size(132, 35);
             this.signupbtn.TabIndex = 21;
-            this.signupbtn.Text = "اضافه حساب";
+            this.signupbtn.Text = "إضافة حساب";
             this.signupbtn.UseVisualStyleBackColor = false;
             this.signupbtn.Visible = false;
             this.signupbtn.Click += new System.EventHandler(this.signupbtn_Click);
             // 
             // updateform
             // 
-            this.updateform.BackColor = System.Drawing.Color.Black;
-            this.updateform.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateform.ForeColor = System.Drawing.Color.IndianRed;
+            this.updateform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.updateform.Font = new System.Drawing.Font("PT Bold Heading", 15.75F);
+            this.updateform.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.updateform.Location = new System.Drawing.Point(35, 345);
             this.updateform.Name = "updateform";
             this.updateform.Size = new System.Drawing.Size(287, 65);
@@ -133,14 +133,14 @@
             // 
             // changepassbtn
             // 
-            this.changepassbtn.BackColor = System.Drawing.Color.Black;
-            this.changepassbtn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.changepassbtn.ForeColor = System.Drawing.Color.IndianRed;
+            this.changepassbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.changepassbtn.Font = new System.Drawing.Font("PT Bold Heading", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.changepassbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.changepassbtn.Location = new System.Drawing.Point(35, 474);
             this.changepassbtn.Name = "changepassbtn";
             this.changepassbtn.Size = new System.Drawing.Size(121, 35);
-            this.changepassbtn.TabIndex = 23;
-            this.changepassbtn.Text = "تغيير كلمه سر";
+            this.changepassbtn.TabIndex = 24;
+            this.changepassbtn.Text = "تغيير كلمة سر";
             this.changepassbtn.UseVisualStyleBackColor = false;
             this.changepassbtn.Visible = false;
             this.changepassbtn.Click += new System.EventHandler(this.changepassbtn_Click);
@@ -149,7 +149,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(356, 523);
             this.Controls.Add(this.changepassbtn);
             this.Controls.Add(this.updateform);

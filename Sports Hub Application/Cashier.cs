@@ -423,12 +423,11 @@ namespace Private_Pool_Application
 
 
 
-
         private async Task UpdateSportPriceAsync(int sportID, string category)
         {
             string priceColumn;
 
-            // Use if-else instead of switch expression
+            // Determine which price column to use based on the category
             if (category == "عضو")
             {
                 priceColumn = "MemberPrice";
@@ -461,20 +460,30 @@ namespace Private_Pool_Application
                     {
                         await connection.OpenAsync();
                         object result = await command.ExecuteScalarAsync();
+
                         if (result != null && decimal.TryParse(result.ToString(), out decimal price))
                         {
+                            // Calculate VAT (assuming a 14% VAT rate)
+                            decimal vatAmount = price * 0.14M;
+                            decimal totalPriceWithVat = price + vatAmount;
+
                             // Ensure the label update is done on the UI thread
                             if (sportpricelistlabel.InvokeRequired)
                             {
                                 sportpricelistlabel.Invoke(new Action(() =>
                                 {
-                                    sportpricelistlabel.Text = "Total price = " + price.ToString("F2");
+                                    // Update label to show only "Total Price = <total with VAT>"
+                                    sportpricelistlabel.Text = $"Total Price = {totalPriceWithVat:F2}";
                                 }));
                             }
                             else
                             {
-                                sportpricelistlabel.Text = "Total price = " + price.ToString("F2");
+                                // Update label to show only "Total Price = <total with VAT>"
+                                sportpricelistlabel.Text = $"Total Price = {totalPriceWithVat:F2}";
                             }
+
+                            // Store original total price for use in discount logic
+                            originalTotalPrice = totalPriceWithVat;
                         }
                         else
                         {
@@ -671,7 +680,7 @@ namespace Private_Pool_Application
 
                 // Define folder path
                string folderPath = @"\\192.168.50.5\e\Daily Backup\PrivatePool ScreenShots";
-               // string folderPath = @"F:\New folder";
+                //string folderPath = @"F:\New folder";
 
                 // Create directory if it doesn't exist
                 if (!Directory.Exists(folderPath))
@@ -1302,7 +1311,7 @@ ORDER BY DateUpdated DESC";
 
         private void backButton_Click_2(object sender, EventArgs e)
         {
-            Home loginForm = new Home("");
+            Home loginForm = new Home(_username);
             this.Close();
             loginForm.Show();
         }
@@ -1538,43 +1547,77 @@ ORDER BY DateUpdated DESC";
 
         private void applyDiscountButton_Click_1(object sender, EventArgs e)
         {
-            decimal totalPrice;
-
-            if (!decimal.TryParse(sportpricelistlabel.Text.Split('=')[1].Trim(), out totalPrice))
+            try
             {
-                MessageBox.Show("Invalid total price.");
-                return;
-            }
+                // Check if the label has been set and is in the correct format
+                if (string.IsNullOrEmpty(sportpricelistlabel.Text) || !sportpricelistlabel.Text.StartsWith("Total Price = "))
+                {
+                    MessageBox.Show("Price details are not set or not in the expected format.");
+                    return;
+                }
 
-            // Prompt for discount percentage
-            string discountInput = Microsoft.VisualBasic.Interaction.InputBox("Enter discount percentage (e.g., 20 for 20%):", "Apply Discount", "0");
-            if (!decimal.TryParse(discountInput, out discountPercentage) || discountPercentage < 0 || discountPercentage > 100)
+                // Extract the total price from the label
+                string totalPriceText = sportpricelistlabel.Text.Split('=')[1].Trim();
+
+                // Parse the total price (this should be the total with VAT)
+                if (!decimal.TryParse(totalPriceText, out decimal totalPriceWithVat))
+                {
+                    MessageBox.Show("Invalid total price format.");
+                    return;
+                }
+
+                decimal vatRate = 0.14M; // 14% VAT rate
+
+                // If a discount has already been applied, revert to the original price
+                if (isDiscountApplied)
+                {
+                    // Reset the price to the original value
+                    sportpricelistlabel.Text = $"Total Price = {originalTotalPrice:F2}";
+                    isDiscountApplied = false;
+                    MessageBox.Show("Discount has been removed. Price reset to the original value.");
+                    return;
+                }
+
+                // If no discount has been applied, proceed to apply a discount
+                if (originalTotalPrice == 0)
+                {
+                    // Store the original total price for future reference
+                    originalTotalPrice = totalPriceWithVat;
+                }
+
+                // To find the original price, we need to first extract the VAT.
+                decimal originalPrice = totalPriceWithVat / (1 + vatRate); // Total price = Original price + VAT
+
+                // Prompt for discount percentage
+                string discountInput = Microsoft.VisualBasic.Interaction.InputBox("Enter discount percentage (e.g., 20 for 20%):", "Apply Discount", "0");
+                if (!decimal.TryParse(discountInput, out discountPercentage) || discountPercentage < 0 || discountPercentage > 100)
+                {
+                    MessageBox.Show("Invalid discount percentage.");
+                    return;
+                }
+
+                // Calculate the discount amount based on the original price
+                decimal discountAmount = (originalPrice * discountPercentage) / 100;
+                decimal discountedPrice = originalPrice - discountAmount;
+
+                // Calculate VAT based on the original price
+                decimal vatAmount = originalPrice * vatRate; // 14% VAT
+
+                // Calculate the new total price (discounted price + VAT)
+                decimal newTotalPrice = discountedPrice + vatAmount;
+
+                // Update the label to reflect only the new total price
+                sportpricelistlabel.Text = $"Total Price = {newTotalPrice:F2}";
+
+                // Set the flag to indicate that a discount has been applied
+                isDiscountApplied = true;
+
+                MessageBox.Show($"Discount applied. New total price: {newTotalPrice:F2}");
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show("Invalid discount percentage.");
-                return;
+                MessageBox.Show($"An error occurred: {ex.Message}");
             }
-
-            if (isDiscountApplied)
-            {
-                // Reset the total price to the original value before applying new discount
-                totalPrice = originalTotalPrice;
-            }
-            else
-            {
-                // Store the original total price before applying the first discount
-                originalTotalPrice = totalPrice;
-            }
-
-            // Calculate the discount amount and the new total price
-            decimal discountAmount = (totalPrice * discountPercentage) / 100;
-            decimal discountedTotal = totalPrice - discountAmount;
-
-            // Update the total price label
-            sportpricelistlabel.Text = "Total price = " + discountedTotal.ToString("0.00");
-
-            MessageBox.Show($"Discount applied. New total price: {discountedTotal:0.00}");
-
-            isDiscountApplied = true; // Set the flag to true indicating the discount has been applied
         }
 
 
@@ -1671,36 +1714,62 @@ ORDER BY DateUpdated DESC";
             int roleID = 0;
             string username = Login.LoggedInUsername; // Assuming this is how you store the logged-in username
 
-            using (SqlConnection connection = new SqlConnection(DatabaseConfig.connectionString))
+            // Check if the username is valid before proceeding
+            if (string.IsNullOrEmpty(username))
             {
-                string query = @"
-               SELECT RoleID
+                MessageBox.Show("Logged-in username is not available.");
+                return roleID;
+            }
+
+            // Ensure that the connection string is valid
+            if (string.IsNullOrEmpty(DatabaseConfig.connectionString))
+            {
+                MessageBox.Show("Database connection string is not configured properly.");
+                return roleID;
+            }
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(DatabaseConfig.connectionString))
+                {
+                    string query = @"
+            SELECT RoleID
             FROM MixedGymDB.dbo.CashierDetails
             WHERE Username = @Username";
 
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@Username", username);
-
-                    try
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
+                        command.Parameters.AddWithValue("@Username", username);
+
                         connection.Open();
+
                         object result = command.ExecuteScalar();
 
                         if (result != null && int.TryParse(result.ToString(), out roleID))
                         {
                             return roleID;
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("An error occurred: " + ex.Message);
+                        else
+                        {
+                            MessageBox.Show("No RoleID found for the given username.");
+                        }
                     }
                 }
+            }
+            catch (SqlException sqlEx)
+            {
+                // Log detailed SQL exception information
+                MessageBox.Show($"A database error occurred: {sqlEx.Message}\n\n{sqlEx.StackTrace}");
+            }
+            catch (Exception ex)
+            {
+                // Log detailed general exception information
+                MessageBox.Show($"An error occurred: {ex.Message}\n\n{ex.StackTrace}");
             }
 
             return roleID;
         }
+
 
         private void exportimgbtn_Click(object sender, EventArgs e)
         {

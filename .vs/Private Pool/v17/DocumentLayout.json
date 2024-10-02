@@ -3,68 +3,95 @@
   "WorkspaceRootPath": "D:\\Selim\\Programs\\PrivatePool-Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\dailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\dailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\dailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\dailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|d:\\selim\\programs\\privatepool-application\\sports hub application\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\monthlyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\monthlyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\usersdatabaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\usersdatabaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\monthlyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\monthlyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\cashierdailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\cashierdailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\cashierdailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\cashierdailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\customerreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\customerreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\customerreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\customerreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|d:\\selim\\programs\\privatepool-application\\sports hub application\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|d:\\selim\\programs\\privatepool-application\\sports hub application\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\userupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\userupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|d:\\selim\\programs\\privatepool-application\\sports hub application\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\userupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\userupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|PrivatePool||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\dailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\dailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\dailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\dailyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\userupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\userupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DA7B957-19A0-4BF5-A2CE-454616D8E108}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\customerreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\customerreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\changepass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\changepass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\cashierdailyreport.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\cashierdailyreport.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|D:\\Selim\\Programs\\PrivatePool-Application\\sports hub application\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7728041-1831-4FCA-96CA-22D161320EF0}|Sports Hub Application\\PrivatePool.csproj|solutionrelative:sports hub application\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,195 +101,287 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SignUp.cs",
-              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\SignUp.cs",
-              "RelativeDocumentMoniker": "Sports Hub Application\\SignUp.cs",
-              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\SignUp.cs",
-              "RelativeToolTip": "Sports Hub Application\\SignUp.cs",
-              "ViewState": "AQIAAHwAAAAAAAAAAAAAAKIAAAA/AAAA",
+              "Title": "CashierDailyReport.cs",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\CashierDailyReport.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\CashierDailyReport.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\CashierDailyReport.cs",
+              "RelativeToolTip": "Sports Hub Application\\CashierDailyReport.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAlwFYAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T11:11:03.054Z"
+              "WhenOpened": "2024-09-30T20:50:43.886Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SignUp.cs [Design]",
-              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\SignUp.cs",
-              "RelativeDocumentMoniker": "Sports Hub Application\\SignUp.cs",
-              "ToolTip": "D:\\Selim\\Programs\\Private Pool\\Sports Hub Application\\SignUp.cs [Design]",
-              "RelativeToolTip": "..\\Private Pool\\Sports Hub Application\\SignUp.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "MonthlyReport.cs [Design]",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\MonthlyReport.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\MonthlyReport.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\MonthlyReport.cs [Design]",
+              "RelativeToolTip": "Sports Hub Application\\MonthlyReport.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T11:11:01.467Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CustomerReport.cs",
-              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\CustomerReport.cs",
-              "RelativeDocumentMoniker": "Sports Hub Application\\CustomerReport.cs",
-              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\CustomerReport.cs",
-              "RelativeToolTip": "Sports Hub Application\\CustomerReport.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAAAOoCAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T18:08:50.277Z"
+              "WhenOpened": "2024-09-30T20:46:06.437Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DatabaseConfig.cs",
-              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\DatabaseConfig.cs",
-              "RelativeDocumentMoniker": "Sports Hub Application\\DatabaseConfig.cs",
-              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\DatabaseConfig.cs",
-              "RelativeToolTip": "Sports Hub Application\\DatabaseConfig.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAPAAAA",
+              "Title": "MonthlyReport.cs",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\MonthlyReport.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\MonthlyReport.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\MonthlyReport.cs",
+              "RelativeToolTip": "Sports Hub Application\\MonthlyReport.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAlwIQAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T11:37:18.383Z",
+              "WhenOpened": "2024-09-29T10:16:35.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "DailyReport.cs [Design]",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\DailyReport.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\DailyReport.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\DailyReport.cs [Design]",
+              "RelativeToolTip": "Sports Hub Application\\DailyReport.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T20:46:35.677Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DailyReport.cs",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\DailyReport.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\DailyReport.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\DailyReport.cs",
+              "RelativeToolTip": "Sports Hub Application\\DailyReport.cs",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAlwLUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T18:07:29.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CashierDailyReport.cs [Design]",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\CashierDailyReport.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\CashierDailyReport.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\CashierDailyReport.cs [Design]",
+              "RelativeToolTip": "Sports Hub Application\\CashierDailyReport.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T10:00:36.714Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cashier.cs",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Cashier.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\Cashier.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Cashier.cs",
+              "RelativeToolTip": "Sports Hub Application\\Cashier.cs",
+              "ViewState": "AQIAAIgCAAAAAAAAAAAlwEgCAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T10:15:18.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Cashier.cs [Design]",
               "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Cashier.cs",
               "RelativeDocumentMoniker": "Sports Hub Application\\Cashier.cs",
               "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Cashier.cs [Design]",
               "RelativeToolTip": "Sports Hub Application\\Cashier.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T14:58:03.3Z",
+              "WhenOpened": "2024-09-30T20:48:47.325Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Cashier.cs",
-              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Cashier.cs",
-              "RelativeDocumentMoniker": "Sports Hub Application\\Cashier.cs",
-              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Cashier.cs",
-              "RelativeToolTip": "Sports Hub Application\\Cashier.cs",
-              "ViewState": "AQIAAJACAAAAAAAAAAAAAD8CAAAMAAAA",
+              "DocumentIndex": 8,
+              "Title": "DatabaseConfig.cs",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\DatabaseConfig.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\DatabaseConfig.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\DatabaseConfig.cs",
+              "RelativeToolTip": "Sports Hub Application\\DatabaseConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T12:30:25.406Z",
+              "WhenOpened": "2024-09-30T20:51:37.484Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsersDatabaseConfig.cs",
-              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\UsersDatabaseConfig.cs",
-              "RelativeDocumentMoniker": "Sports Hub Application\\UsersDatabaseConfig.cs",
-              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\UsersDatabaseConfig.cs",
-              "RelativeToolTip": "Sports Hub Application\\UsersDatabaseConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T12:10:20.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CustomerReport.cs [Design]",
-              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\CustomerReport.cs",
-              "RelativeDocumentMoniker": "Sports Hub Application\\CustomerReport.cs",
-              "ToolTip": "D:\\Selim\\Programs\\Private Pool\\Sports Hub Application\\CustomerReport.cs [Design]",
-              "RelativeToolTip": "..\\Private Pool\\Sports Hub Application\\CustomerReport.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T18:08:49.222Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UpdateTransaction.cs",
               "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\UpdateTransaction.cs",
               "RelativeDocumentMoniker": "Sports Hub Application\\UpdateTransaction.cs",
               "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\UpdateTransaction.cs",
               "RelativeToolTip": "Sports Hub Application\\UpdateTransaction.cs",
-              "ViewState": "AQIAAMYCAAAAAAAAAAAAAO4CAAANAAAA",
+              "ViewState": "AQIAAKUBAAAAAAAAAAAQwMkBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T18:10:09.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UpdateTransaction.cs [Design]",
-              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\UpdateTransaction.cs",
-              "RelativeDocumentMoniker": "Sports Hub Application\\UpdateTransaction.cs",
-              "ToolTip": "D:\\Selim\\Programs\\Private Pool\\Sports Hub Application\\UpdateTransaction.cs [Design]",
-              "RelativeToolTip": "..\\Private Pool\\Sports Hub Application\\UpdateTransaction.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T18:10:08.454Z"
+              "WhenOpened": "2024-10-02T16:50:16.026Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "UpdateTransaction.cs [Design]",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\UpdateTransaction.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\UpdateTransaction.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\UpdateTransaction.cs [Design]",
+              "RelativeToolTip": "Sports Hub Application\\UpdateTransaction.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T16:50:14.088Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PrivatePool",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\PrivatePool.csproj",
+              "RelativeDocumentMoniker": "Sports Hub Application\\PrivatePool.csproj",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\PrivatePool.csproj",
+              "RelativeToolTip": "Sports Hub Application\\PrivatePool.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-30T21:48:18.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomerReport.cs",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\CustomerReport.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\CustomerReport.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\CustomerReport.cs",
+              "RelativeToolTip": "Sports Hub Application\\CustomerReport.cs",
+              "ViewState": "AQIAAFkCAAAAAAAAAAAAwHMCAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T10:15:52.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Changepass.cs",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Changepass.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\Changepass.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Changepass.cs",
+              "RelativeToolTip": "Sports Hub Application\\Changepass.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAwFQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T10:15:44.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Login.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\Login.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Login.cs [Design]",
+              "RelativeToolTip": "Sports Hub Application\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T10:09:14.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Login.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\Login.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Login.cs",
+              "RelativeToolTip": "Sports Hub Application\\Login.cs",
+              "ViewState": "AQIAANkAAAAAAAAAAAAAwPsAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T10:10:48.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\SignUp.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\SignUp.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\SignUp.cs",
+              "RelativeToolTip": "Sports Hub Application\\SignUp.cs",
+              "ViewState": "AQIAAMcAAAAAAAAAAAAAwOEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T10:16:45.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "UserUpdate.cs",
               "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\UserUpdate.cs",
               "RelativeDocumentMoniker": "Sports Hub Application\\UserUpdate.cs",
               "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\UserUpdate.cs",
               "RelativeToolTip": "Sports Hub Application\\UserUpdate.cs",
-              "ViewState": "AQIAAKYAAAAAAAAAAAAAAMgAAAAOAAAA",
+              "ViewState": "AQIAAKQBAAAAAAAAAAAAwL4BAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-26T18:09:41.245Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserUpdate.cs [Design]",
-              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\UserUpdate.cs",
-              "RelativeDocumentMoniker": "Sports Hub Application\\UserUpdate.cs",
-              "ToolTip": "D:\\Selim\\Programs\\Private Pool\\Sports Hub Application\\UserUpdate.cs [Design]",
-              "RelativeToolTip": "..\\Private Pool\\Sports Hub Application\\UserUpdate.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T18:09:39.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DailyReport.cs",
-              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\DailyReport.cs",
-              "RelativeDocumentMoniker": "Sports Hub Application\\DailyReport.cs",
-              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\DailyReport.cs",
-              "RelativeToolTip": "Sports Hub Application\\DailyReport.cs",
-              "ViewState": "AQIAAJUBAAAAAAAAAAAAAMABAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T18:07:29.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DailyReport.cs [Design]",
-              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\DailyReport.cs",
-              "RelativeDocumentMoniker": "Sports Hub Application\\DailyReport.cs",
-              "ToolTip": "D:\\Selim\\Programs\\Private Pool\\Sports Hub Application\\DailyReport.cs [Design]",
-              "RelativeToolTip": "..\\Private Pool\\Sports Hub Application\\DailyReport.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T18:07:27.914Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Home.cs",
               "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Home.cs",
               "RelativeDocumentMoniker": "Sports Hub Application\\Home.cs",
               "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Home.cs",
               "RelativeToolTip": "Sports Hub Application\\Home.cs",
-              "ViewState": "AQIAAJkAAAAAAAAAAAAAALwAAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T12:43:47.777Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\Login.Designer.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Login.Designer.cs",
+              "RelativeToolTip": "Sports Hub Application\\Login.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T10:07:47.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CashierDailyReport.Designer.cs",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\CashierDailyReport.Designer.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\CashierDailyReport.Designer.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\CashierDailyReport.Designer.cs",
+              "RelativeToolTip": "Sports Hub Application\\CashierDailyReport.Designer.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAAAHQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T10:00:15.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Home.cs [Design]",
               "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Home.cs",
               "RelativeDocumentMoniker": "Sports Hub Application\\Home.cs",
-              "ToolTip": "D:\\Selim\\Programs\\Private Pool\\Sports Hub Application\\Home.cs [Design]",
-              "RelativeToolTip": "..\\Private Pool\\Sports Hub Application\\Home.cs [Design]",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Home.cs [Design]",
+              "RelativeToolTip": "Sports Hub Application\\Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T12:30:19.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Home.Designer.cs",
+              "DocumentMoniker": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Home.Designer.cs",
+              "RelativeDocumentMoniker": "Sports Hub Application\\Home.Designer.cs",
+              "ToolTip": "D:\\Selim\\Programs\\PrivatePool-Application\\Sports Hub Application\\Home.Designer.cs",
+              "RelativeToolTip": "Sports Hub Application\\Home.Designer.cs",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAQwLUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T09:57:09.001Z"
             }
           ]
         },

@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Private_Pool_Application
@@ -16,68 +11,100 @@ namespace Private_Pool_Application
         private float _initialFormWidth;
         private float _initialFormHeight;
         private ControlInfo[] _controlsInfo;
-
-
         private string _username;
+        
 
         public Home(string username)
         {
-
-
-            _username = username;
-            InitializeComponent();
-            // Store initial form size
-            _initialFormWidth = this.Width;
-            _initialFormHeight = this.Height;
-
-            // Store initial size and location of all controls
-            _controlsInfo = new ControlInfo[this.Controls.Count];
-            for (int i = 0; i < this.Controls.Count; i++)
+            try
             {
-                Control c = this.Controls[i];
-                _controlsInfo[i] = new ControlInfo(c.Left, c.Top, c.Width, c.Height, c.Font.Size);
+                InitializeComponent();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error during InitializeComponent: {ex.Message}");
+                return;
             }
 
+            // Check if username is valid, else exit
+            if (string.IsNullOrEmpty(username))
+            {
+                MessageBox.Show("Invalid login attempt. Username is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+                return;
+            }
+
+            _username = username;
+            
+
+            // Debug message for initialization
+            Console.WriteLine($"Home initialized with username: {_username}");
+
+            // Store initial form size for resizing controls
+            _initialFormWidth = this.Width;
+            _initialFormHeight = this.Height;
+            this.Load += Home_Load; // Ensure the event handler is attached
             // Set event handler for form resize
             this.Resize += Home_Resize;
         }
 
         private void SetButtonVisibilityBasedOnRole()
         {
+            Console.WriteLine($"_username value: {_username}");
+
+            // Fetch role based on the logged-in user
             int roleID = GetRoleIdForCurrentUser();
 
-            if (roleID == 1 || roleID == 3)
-            {
-               
-                   signupbtn.Visible = false;
-                changepassbtn.Visible = false;
-                
+            Console.WriteLine($"RoleID for user {_username}: {roleID}");
 
-
-            }
-            
-            else if (roleID == 4)
+            // Control visibility of buttons based on role
+            switch (roleID)
             {
-               signupbtn.Visible = true;  
-               changepassbtn.Visible = true;
+                case 1: // Case for specific roles, e.g., admin or superuser
+                case 3:
+                    signupbtn.Visible = false;
+                    changepassbtn.Visible = false;
+                    break;
+                case 4: // Example role where the user has access to both buttons
+                    signupbtn.Visible = true;
+                    changepassbtn.Visible = true;
+                    break;
+                default:
+                    Console.WriteLine("Unknown RoleID. Button visibility not modified.");
+                    break;
             }
         }
 
         private int GetRoleIdForCurrentUser()
         {
-            int roleID = 0;
-            string username = Login.LoggedInUsername; // Assuming this is how you store the logged-in username
+            Console.WriteLine("GetRoleIdForCurrentUser called."); // Debug message
+            int roleID = 4;
+
+            if (string.IsNullOrEmpty(_username))
+            {
+                Console.WriteLine("Logged-in username is not available.");
+                return roleID;
+            }
+
+            if (string.IsNullOrEmpty(DatabaseConfig.connectionString))
+            {
+                Console.WriteLine("Database connection string is not configured properly.");
+                return roleID;
+            }
+
+            Console.WriteLine($"Attempting to get role for username: {_username}");
+            Console.WriteLine($"Connection String: {DatabaseConfig.connectionString}");
+
+            string query = @"
+    SELECT RoleID
+    FROM Mixedgym.dbo.CashierDetails
+    WHERE Username = @Username";
 
             using (SqlConnection connection = new SqlConnection(DatabaseConfig.connectionString))
             {
-                string query = @"
-               SELECT RoleID
-            FROM MixedGymDB.dbo.CashierDetails
-            WHERE Username = @Username";
-
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@Username", username);
+                    command.Parameters.Add("@Username", SqlDbType.NVarChar).Value = _username;
 
                     try
                     {
@@ -88,58 +115,35 @@ namespace Private_Pool_Application
                         {
                             return roleID;
                         }
+                        else
+                        {
+                            Console.WriteLine("No result returned from query.");
+                        }
+                    }
+                    catch (SqlException sqlEx)
+                    {
+                        Console.WriteLine($"SQL Exception: {sqlEx.Message}");
+                        foreach (SqlError error in sqlEx.Errors)
+                        {
+                            Console.WriteLine($"Error Number: {error.Number}, Message: {error.Message}");
+                        }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("An error occurred: " + ex.Message);
+                        Console.WriteLine($"General Exception: {ex.Message}");
                     }
                 }
             }
 
-            return roleID;
+            return roleID; // Return default roleID if no result is found
         }
-
-
-
 
 
         private void Home_Load(object sender, EventArgs e)
         {
-            SetButtonVisibilityBasedOnRole();// Additional initialization if needed
-        }
-
-        private void DailyReportbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            DailyReport dailyReportForm = new DailyReport(_username);
-            dailyReportForm.ShowDialog();
-            this.Close();
-            
-            
-        }
-
-        private void MonthlyReportbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            MonthlyReport monthlyForm = new MonthlyReport(_username);
-            monthlyForm.ShowDialog();
-            this.Close();
-        }
-
-        private void CustomerReportBtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            CustomerReport customerReportForm = new CustomerReport(_username);
-            customerReportForm.ShowDialog();
-            this.Close();   
-        }
-
-        private void CashierFormbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Cashier cashierForm = new Cashier(_username);
-            cashierForm.ShowDialog();
-            this.Close();      
+            Console.WriteLine("Home_Load event triggered.");
+            // Set button visibility based on the user's role
+            SetButtonVisibilityBasedOnRole();
         }
 
         private void Home_Resize(object sender, EventArgs e)
@@ -161,7 +165,7 @@ namespace Private_Pool_Application
                 control.Width = (int)(controlInfo.Width * widthRatio);
                 control.Height = (int)(controlInfo.Height * heightRatio);
 
-                // Adjust font size
+                // Adjust font size proportionally
                 control.Font = new Font(control.Font.FontFamily, controlInfo.FontSize * Math.Min(widthRatio, heightRatio));
             }
         }
@@ -184,44 +188,56 @@ namespace Private_Pool_Application
             }
         }
 
-        private void backButton_Click(object sender, EventArgs e)
-        {         
-    var confirmResult = MessageBox.Show("تاكيد خروج ؟؟؟",
-                                         "Confirm Exit",
-                                         MessageBoxButtons.YesNo,
-                                         MessageBoxIcon.Question);
-    if (confirmResult == DialogResult.Yes)
-    {
-        Application.Exit();
-    }
-}
+        // Navigation Buttons for accessing different reports
+        private void DailyReportbtn_Click(object sender, EventArgs e)
+        {
+            NavigateToForm(new DailyReport(_username));
+        }
 
+        private void MonthlyReportbtn_Click(object sender, EventArgs e)
+        {
+            NavigateToForm(new MonthlyReport(_username));
+        }
 
+        private void CustomerReportBtn_Click(object sender, EventArgs e)
+        {
+            NavigateToForm(new CustomerReport(_username));
+        }
 
+        private void CashierFormbtn_Click(object sender, EventArgs e)
+        {
+            NavigateToForm(new Cashier(_username));
+        }
 
         private void signupbtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            SignUp SignupForm = new SignUp(_username);
-            SignupForm.ShowDialog();
-            this.Close();
+            NavigateToForm(new SignUp(_username));
         }
 
         private void updateform_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            UserUpdate loginForm = new UserUpdate(_username);
-            loginForm.ShowDialog();
-            this.Close();
+            NavigateToForm(new UserUpdate(_username));
         }
 
         private void changepassbtn_Click(object sender, EventArgs e)
         {
+            NavigateToForm(new Changepass(_username));
+        }
+
+        private void NavigateToForm(Form form)
+        {
             this.Hide();
-            Changepass changepass = new Changepass(_username);
-            changepass.ShowDialog();
+            form.ShowDialog();
             this.Close();
         }
-    }
-    }
 
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            var confirmResult = MessageBox.Show("Are you sure you want to exit?", "Confirm Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirmResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+    }
+}

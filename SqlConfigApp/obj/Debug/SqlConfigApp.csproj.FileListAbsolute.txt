@@ -194,3 +194,34 @@ D:\Selim\Programs\Private Pool\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.CoreCo
 D:\Selim\Programs\Private Pool\SqlConfigApp\obj\Debug\SqlConfi.E5645F07.Up2Date
 D:\Selim\Programs\Private Pool\SqlConfigApp\obj\Debug\SqlConfigApp.exe
 D:\Selim\Programs\Private Pool\SqlConfigApp\obj\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\SqlConfigApp.exe.config
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\SqlConfigApp.exe
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\SqlConfigApp.pdb
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\ClosedXML.dll
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\ExcelNumberFormat.dll
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\Irony.dll
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\SixLabors.Fonts.dll
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\System.Buffers.dll
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\System.IO.Packaging.dll
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\System.Memory.dll
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\System.Numerics.Vectors.dll
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\XLParser.dll
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\ClosedXML.xml
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\ExcelNumberFormat.xml
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\SixLabors.Fonts.xml
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\System.Buffers.xml
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\System.IO.Packaging.xml
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\System.Memory.xml
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\System.Numerics.Vectors.xml
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.AssemblyReference.cache
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\obj\Debug\SqlConfigApp.Form1.resources
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\obj\Debug\SqlConfigApp.Properties.Resources.resources
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.GenerateResource.cache
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\obj\Debug\SqlConfigApp.csproj.CoreCompileInputs.cache
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\obj\Debug\SqlConfi.E5645F07.Up2Date
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\obj\Debug\SqlConfigApp.exe
+D:\Selim\Programs\PrivatePool-Application\SqlConfigApp\obj\Debug\SqlConfigApp.pdb

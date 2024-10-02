@@ -26,8 +26,6 @@ namespace Private_Pool_Application.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-64N23O5;Initial Catalog=SportshubDB;Integrated Security=True;" +
-            "Encrypt=False")]
         public string SportshubDBConnectionString {
             get {
                 return ((string)(this["SportshubDBConnectionString"]));

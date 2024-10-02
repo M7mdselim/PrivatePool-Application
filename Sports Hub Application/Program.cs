@@ -1,18 +1,18 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using System;
 
 namespace Private_Pool_Application
 {
-    static class Program
+    public static class Program  // Class should be public
     {
         [STAThread]
-        static void Main()
+        public static void Main()  // Main method should also be public
         {
             try
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new Login()); // Or your main form
+                Application.Run(new Login());  // Entry point for the application
             }
             catch (Exception ex)
             {
@@ -21,3 +21,4 @@ namespace Private_Pool_Application
         }
     }
 }
+
