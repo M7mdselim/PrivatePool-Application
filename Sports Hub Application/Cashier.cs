@@ -2250,6 +2250,8 @@ ORDER BY DateUpdated DESC";
             string selectedCategory = categorycombo.SelectedItem.ToString();
             await UpdateSportPriceAsync(sportID, selectedCategory);
         }
+
+        
     }
 }
 

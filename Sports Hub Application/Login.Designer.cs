@@ -38,6 +38,7 @@
             this.loginbtn = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.infobtn = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -97,9 +98,9 @@
             this.Headerlabel.Location = new System.Drawing.Point(123, 2);
             this.Headerlabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Headerlabel.Name = "Headerlabel";
-            this.Headerlabel.Size = new System.Drawing.Size(128, 25);
+            this.Headerlabel.Size = new System.Drawing.Size(130, 25);
             this.Headerlabel.TabIndex = 0;
-            this.Headerlabel.Text = "Mixed GYM";
+            this.Headerlabel.Text = "Private Pool";
             this.Headerlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Usertxt
@@ -254,6 +255,69 @@
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.Visible = false;
             // 
+            // infobtn
+            // 
+            this.infobtn.AutoSize = true;
+            this.infobtn.Location = new System.Drawing.Point(352, 2);
+            this.infobtn.Name = "infobtn";
+            this.infobtn.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.infobtn.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.infobtn.OverrideDefault.Back.ColorAngle = 45F;
+            this.infobtn.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.infobtn.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.infobtn.OverrideDefault.Border.ColorAngle = 45F;
+            this.infobtn.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.infobtn.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.infobtn.OverrideDefault.Border.Rounding = 18;
+            this.infobtn.OverrideDefault.Border.Width = 1;
+            this.infobtn.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.infobtn.Size = new System.Drawing.Size(26, 25);
+            this.infobtn.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
+            this.infobtn.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
+            this.infobtn.StateCommon.Back.ColorAngle = 45F;
+            this.infobtn.StateCommon.Back.Image = global::Private_Pool_Application.Properties.Resources.pngtree_info_vector_icon_png_image_470297;
+            this.infobtn.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Stretch;
+            this.infobtn.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.infobtn.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
+            this.infobtn.StateCommon.Border.ColorAngle = 45F;
+            this.infobtn.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.infobtn.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.infobtn.StateCommon.Border.Rounding = 0;
+            this.infobtn.StateCommon.Border.Width = 1;
+            this.infobtn.StateCommon.Content.ShortText.Color1 = System.Drawing.SystemColors.InactiveBorder;
+            this.infobtn.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.infobtn.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.infobtn.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(146)))), ((int)(((byte)(197)))));
+            this.infobtn.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(122)))), ((int)(((byte)(206)))));
+            this.infobtn.StatePressed.Back.ColorAngle = 130F;
+            this.infobtn.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(146)))), ((int)(((byte)(197)))));
+            this.infobtn.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(122)))), ((int)(((byte)(206)))));
+            this.infobtn.StatePressed.Border.ColorAngle = 130F;
+            this.infobtn.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.infobtn.StatePressed.Border.Rounding = 18;
+            this.infobtn.StatePressed.Border.Width = 1;
+            this.infobtn.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.infobtn.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.infobtn.StateTracking.Back.ColorAngle = 45F;
+            this.infobtn.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.infobtn.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.infobtn.StateTracking.Border.ColorAngle = 45F;
+            this.infobtn.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.infobtn.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.infobtn.StateTracking.Border.Rounding = 18;
+            this.infobtn.StateTracking.Border.Width = 1;
+            this.infobtn.TabIndex = 54;
+            this.infobtn.Values.Text = "";
+            this.infobtn.Click += new System.EventHandler(this.infobtn_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.DimGray;
@@ -272,6 +336,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(376, 400);
+            this.Controls.Add(this.infobtn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
@@ -308,6 +373,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton infobtn;
     }
 }
 

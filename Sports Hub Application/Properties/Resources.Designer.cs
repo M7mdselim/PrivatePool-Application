@@ -129,5 +129,15 @@ namespace Private_Pool_Application.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_info_vector_icon_png_image_470297 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-info-vector-icon-png-image_470297", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -1,0 +1,171 @@
+ALTER TABLE Transactions
+ADD VATAmount DECIMAL(10, 2);
+
+ALTER TABLE Transactions
+ADD TotalPriceWithVAT DECIMAL(10, 2);
+
+
+
+Alter PROCEDURE InsertTransaction
+    @UserID INT,
+    @SportID INT,
+    @AmountPaid DECIMAL(10, 2),
+    @DateAndTime DATETIME,
+    @CashierName NVARCHAR(255),
+    @DiscountPercentage DECIMAL(5, 2) = 0, -- Default to 0 if no discount is provided
+    @Notes NVARCHAR(MAX),
+    @CheckNumber NVARCHAR(50)
+AS
+BEGIN
+    BEGIN TRY
+        BEGIN TRANSACTION;
+
+        -- Validate the discount percentage
+        IF @DiscountPercentage < 0 OR @DiscountPercentage > 100
+        BEGIN
+            THROW 50000, 'Discount percentage must be between 0 and 100.', 1;
+        END
+
+        -- Validate the amount paid
+        IF @AmountPaid < 0
+        BEGIN
+            THROW 50001, 'Amount paid cannot be negative.', 1;
+        END
+
+        DECLARE @Category NVARCHAR(50);
+        DECLARE @Price DECIMAL(10, 2);
+        DECLARE @VATAmount DECIMAL(10, 2);
+        DECLARE @TotalPriceWithVat DECIMAL(10, 2); -- Total price including VAT
+        DECLARE @DiscountAmount DECIMAL(10, 2);    -- Amount deducted due to discount
+        DECLARE @FinalPriceWithVat DECIMAL(10, 2); -- Final price after applying discount
+        DECLARE @RemainingAmount DECIMAL(10, 2);   -- Remaining amount to be paid
+
+        -- Get the user's category
+        SELECT @Category = Category 
+        FROM MixedGymDB.dbo.Users 
+        WHERE UserID = @UserID;
+
+        IF @Category IS NULL
+        BEGIN
+            THROW 50004, 'Invalid UserID.', 1;
+        END
+
+        -- Get the price based on the user's category
+        SELECT @Price = 
+            CASE 
+                WHEN @Category = 'عضو' THEN MemberPrice
+                WHEN @Category = 'مدني' THEN CivilianPrice
+                WHEN @Category = 'درجة 1' THEN Degree1Price
+                WHEN @Category = 'جيش' THEN MilitaryPrice
+                ELSE NULL
+            END
+        FROM Sports
+        WHERE SportID = @SportID;
+
+        IF @Price IS NULL
+        BEGIN
+            THROW 50002, 'Invalid SportID or Category.', 1;
+        END
+
+        -- Calculate the VAT amount (14%) based on the original price
+        SET @VATAmount = @Price * 0.14;
+
+        -- Calculate the Total Price including VAT
+        SET @TotalPriceWithVat = @Price + @VATAmount;
+
+        -- Calculate the discount amount based on the original sport price
+        IF @DiscountPercentage > 0
+        BEGIN
+            SET @DiscountAmount = (@Price * @DiscountPercentage) / 100;  -- Discount based on original price
+        END
+        ELSE
+        BEGIN
+            SET @DiscountAmount = 0;
+        END
+
+        -- Calculate the final price after applying the discount (discount is subtracted from original price)
+        SET @FinalPriceWithVat = (@Price - @DiscountAmount) + @VATAmount;  -- Apply discount only to the original price
+
+        -- Calculate the remaining amount
+        SET @RemainingAmount = @FinalPriceWithVat - @AmountPaid;
+
+        -- Insert the transaction including the necessary details
+        INSERT INTO Transactions 
+            (UserID, SportID, AmountPaid, RemainingAmount, DateAndTime, CashierName, DiscountPercentage, Notes, CheckNumber, VATAmount, TotalPriceWithVat)
+        VALUES 
+            (@UserID, @SportID, @AmountPaid, @RemainingAmount, @DateAndTime, @CashierName, @DiscountPercentage, @Notes, @CheckNumber, @VATAmount, @TotalPriceWithVat);
+
+        -- Commit the transaction
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        ROLLBACK TRANSACTION;
+        THROW;
+    END CATCH
+END;
+
+
+
+
+
+ALTER VIEW vw_TransactionReport AS
+SELECT 
+    T.TransactionID,
+    U.UserID,
+    U.Name AS UserName,
+    T.CheckNumber,
+    S.SportName,
+    -- Calculate the correct price based on the user's category
+    CASE 
+        WHEN U.Category = 'عضو' THEN S.MemberPrice 
+        WHEN U.Category = 'مدني' THEN S.CivilianPrice 
+        WHEN U.Category = 'درجة 1' THEN S.Degree1Price 
+        WHEN U.Category = 'جيش' THEN S.MilitaryPrice 
+        ELSE 0 
+    END AS SportPrice,
+    U.Category,
+    U.MobileNumber,
+    T.AmountPaid,
+    T.RemainingAmount,
+    T.DiscountPercentage,
+    -- VAT is calculated on the original price, not the discounted price
+    (CASE 
+        WHEN U.Category = 'عضو' THEN S.MemberPrice 
+        WHEN U.Category = 'مدني' THEN S.CivilianPrice 
+        WHEN U.Category = 'درجة 1' THEN S.Degree1Price 
+        WHEN U.Category = 'جيش' THEN S.MilitaryPrice 
+        ELSE 0 
+    END * 0.14) AS VATAmount,
+    -- Calculate the total price: apply discount, then add VAT on original price
+    ((CASE 
+        WHEN U.Category = 'عضو' THEN S.MemberPrice 
+        WHEN U.Category = 'مدني' THEN S.CivilianPrice 
+        WHEN U.Category = 'درجة 1' THEN S.Degree1Price 
+        WHEN U.Category = 'جيش' THEN S.MilitaryPrice 
+        ELSE 0 
+    END) - (CASE 
+        WHEN T.DiscountPercentage IS NOT NULL THEN 
+            (CASE 
+                WHEN U.Category = 'عضو' THEN S.MemberPrice 
+                WHEN U.Category = 'مدني' THEN S.CivilianPrice 
+                WHEN U.Category = 'درجة 1' THEN S.Degree1Price 
+                WHEN U.Category = 'جيش' THEN S.MilitaryPrice 
+                ELSE 0 
+            END) * (T.DiscountPercentage / 100)
+        ELSE 0 
+    END)) + (CASE 
+        WHEN U.Category = 'عضو' THEN S.MemberPrice 
+        WHEN U.Category = 'مدني' THEN S.CivilianPrice 
+        WHEN U.Category = 'درجة 1' THEN S.Degree1Price 
+        WHEN U.Category = 'جيش' THEN S.MilitaryPrice 
+        ELSE 0 
+    END * 0.14) AS TotalPriceWithVAT,  -- Discounted price + VAT on original price
+    T.DateAndTime,
+    T.CashierName,
+    T.Notes
+FROM 
+    Transactions T
+JOIN 
+    MixedGymDB.dbo.Users U ON T.UserID = U.UserID
+JOIN 
+    Sports S ON T.SportID = S.SportID;

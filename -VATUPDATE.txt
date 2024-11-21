@@ -1,0 +1,458 @@
+
+        private bool isDiscountApplied = false; // Flag to track if discount is already applied
+        private decimal originalTotalPrice; // Variable to store the original total price
+        private decimal discountPercentage; // Variable to store the discount percentage
+
+        private void applyDiscountButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Check if the label has been set and is in the correct format
+                if (string.IsNullOrEmpty(sportpricelistlabel.Text) || !sportpricelistlabel.Text.StartsWith("Total = "))
+                {
+                    MessageBox.Show("Price details are not set or not in the expected format.");
+                    return;
+                }
+
+                // Extract the original sport price from the label
+                string sportPriceText = sportpricelistlabel.Text.Split('=')[1].Trim();
+
+                // Parse the sport price (this is the price including VAT)
+                if (!decimal.TryParse(sportPriceText, out decimal originalPriceWithVat))
+                {
+                    MessageBox.Show("Invalid sport price format.");
+                    return;
+                }
+
+                // Assuming the VAT rate is 14%
+                decimal vatRate = 0.14M;
+
+                // Calculate the VAT amount based on the original price
+                decimal vatAmount = originalPriceWithVat * vatRate; // VAT amount already included in original price
+
+                // Subtract VAT to get the price without VAT
+                decimal priceWithoutVat = originalPriceWithVat - vatAmount;
+
+                // Check if discount is already applied
+                if (isDiscountApplied)
+                {
+                    // Reset the total price to the original value
+                    sportpricelistlabel.Text = $"Total = {originalPriceWithVat:F2}";
+                    isDiscountApplied = false; // Reset the flag since we're starting over
+                    MessageBox.Show("Discount reset. Original total price restored.");
+                    return;
+                }
+
+                // Prompt for discount percentage
+                string discountInput = Microsoft.VisualBasic.Interaction.InputBox("Enter discount percentage (e.g., 20 for 20%):", "Apply Discount", "0");
+                if (!decimal.TryParse(discountInput, out discountPercentage) || discountPercentage < 0 || discountPercentage > 100)
+                {
+                    MessageBox.Show("Invalid discount percentage.");
+                    return;
+                }
+
+                // Apply the discount to the price without VAT
+                decimal discountAmount = (priceWithoutVat * discountPercentage) / 100;
+                decimal discountedPriceWithoutVat = priceWithoutVat - discountAmount;
+
+                // Round the discounted price without VAT to two decimal places
+                discountedPriceWithoutVat = Math.Round(discountedPriceWithoutVat, 2);
+
+                // Final total price with VAT after discount
+                decimal finalTotalPriceWithVat = discountedPriceWithoutVat + vatAmount;
+
+                // Round the final total price with VAT to two decimal places
+                finalTotalPriceWithVat = Math.Round(finalTotalPriceWithVat, 2);
+
+                // Update the label to reflect the new total price with VAT
+                sportpricelistlabel.Text = $"Total = {finalTotalPriceWithVat:F2}";
+
+                MessageBox.Show($"Discount applied. New total price with VAT: {finalTotalPriceWithVat:F2}");
+
+                // Set the flag to true indicating the discount has been applied
+                isDiscountApplied = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}");
+            }
+        }
+
+
+----
+
+
+
+
+  private async Task UpdateSportPriceAsync(int sportID, string category)
+  {
+      string priceColumn;
+
+      // Determine which price column to use based on the category
+      if (category == "عضو")
+      {
+          priceColumn = "MemberPrice";
+      }
+      else if (category == "مدني")
+      {
+          priceColumn = "CivilianPrice";
+      }
+      else if (category == "درجة 1")
+      {
+          priceColumn = "Degree1Price";
+      }
+      else if (category == "جيش")
+      {
+          priceColumn = "MilitaryPrice";
+      }
+      else
+      {
+          throw new ArgumentException("Invalid category");
+      }
+
+      string query = $"SELECT {priceColumn} FROM Sports WHERE SportID = @SportID";
+
+      using (SqlConnection connection = new SqlConnection(ConnectionString))
+      {
+          using (SqlCommand command = new SqlCommand(query, connection))
+          {
+              command.Parameters.AddWithValue("@SportID", sportID);
+              try
+              {
+                  await connection.OpenAsync();
+                  object result = await command.ExecuteScalarAsync();
+
+                  if (result != null && decimal.TryParse(result.ToString(), out decimal sportPriceWithoutVAT))
+                  {
+                      // Show the sport price without VAT in the label
+                      if (sportpricelistlabel.InvokeRequired)
+                      {
+                          sportpricelistlabel.Invoke(new Action(() =>
+                          {
+                              sportpricelistlabel.Text = $"Total = {sportPriceWithoutVAT:F2}";
+                          }));
+                      }
+                      else
+                      {
+                          sportpricelistlabel.Text = $"Total = {sportPriceWithoutVAT:F2}";
+                      }
+
+                      // Store the original price for further use (if needed)
+                      originalTotalPrice = sportPriceWithoutVAT; // Store this if you need to reference it later
+                  }
+                  else
+                  {
+                      MessageBox.Show("Price not found or invalid.");
+                  }
+              }
+              catch (Exception ex)
+              {
+                  MessageBox.Show("An error occurred: " + ex.Message);
+              }
+          }
+      }
+  }
+
+
+-----
+
+
+
+        private async Task LoadTransactionsAsync(DateTime date)
+        {
+            string query = @"
+   SELECT 
+        T.TransactionID,
+        T.UserID,
+        U.Name AS UserName,
+        T.CheckNumber,
+        S.SportName,
+        CASE 
+            WHEN U.Category = 'عضو' THEN S.MemberPrice
+            WHEN U.Category = 'مدني' THEN S.CivilianPrice
+            WHEN U.Category = 'درجة 1' THEN S.Degree1Price
+            WHEN U.Category = 'جيش' THEN S.MilitaryPrice
+            ELSE NULL
+        END AS SportPrice,
+        U.Category,
+        U.MobileNumber,
+        T.AmountPaid,
+        T.RemainingAmount,
+        T.DiscountPercentage,
+        ROUND(
+            (CASE 
+                WHEN U.Category = 'عضو' THEN S.MemberPrice
+                WHEN U.Category = 'مدني' THEN S.CivilianPrice
+                WHEN U.Category = 'درجة 1' THEN S.Degree1Price
+                WHEN U.Category = 'جيش' THEN S.MilitaryPrice
+                ELSE 0
+            END * 0.14), 2) AS VATAmount,  -- Calculate 14% VAT and round to 2 decimal places
+        T.DateAndTime,
+        T.CashierName,
+        T.Notes
+    FROM 
+        Transactions T
+    INNER JOIN Users U ON T.UserID = U.UserID
+    INNER JOIN Sports S ON T.SportID = S.SportID
+    WHERE 
+        CAST(T.DateAndTime AS DATE) = @Date;
+";
+
+            using (SqlConnection connection = new SqlConnection(DatabaseConfig.connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Date", date.Date);
+
+                    try
+                    {
+                        await connection.OpenAsync();
+                        using (SqlDataReader reader = await command.ExecuteReaderAsync())
+                        {
+                            DataTable dataTable = new DataTable();
+                            dataTable.Load(reader);
+                            transactionsGridView.DataSource = dataTable;
+
+                            // Customize column headers
+                            if (transactionsGridView.Columns.Contains("UserName"))
+                            {
+                                transactionsGridView.Columns["UserName"].HeaderText = "User Name";
+                            }
+                            if (transactionsGridView.Columns.Contains("SportName"))
+                            {
+                                transactionsGridView.Columns["SportName"].HeaderText = "Sport Name";
+                            }
+                            if (transactionsGridView.Columns.Contains("SportPrice"))
+                            {
+                                transactionsGridView.Columns["SportPrice"].HeaderText = "Sport Price";
+                            }
+                            if (transactionsGridView.Columns.Contains("VATAmount"))
+                            {
+                                transactionsGridView.Columns["VATAmount"].HeaderText = "VAT Amount";
+                            }
+                            if (transactionsGridView.Columns.Contains("TotalPriceWithVAT"))
+                            {
+                                transactionsGridView.Columns["TotalPriceWithVAT"].HeaderText = "Total Price (Including VAT)";
+
+                                // Set the format to display two decimal places
+                                transactionsGridView.Columns["TotalPriceWithVAT"].DefaultCellStyle.Format = "F2";
+                            }
+
+                            // Ensure UserID column is hidden
+                            if (transactionsGridView.Columns.Contains("UserID"))
+                            {
+                                transactionsGridView.Columns["UserID"].Visible = false;
+                            }
+
+                            // Set read-only columns
+                            foreach (DataGridViewColumn column in transactionsGridView.Columns)
+                            {
+                                // Make specific columns read-only
+                                if (column.Name == "UserName" ||
+                                    column.Name == "SportName" ||
+                                    column.Name == "SportPrice" ||
+                                    column.Name == "AmountPaid" ||
+                                    column.Name == "RemainingAmount" ||
+                                    column.Name == "VATAmount" ||
+                                    column.Name == "TotalPriceWithVAT")
+                                {
+                                    column.ReadOnly = true;
+                                }
+                            }
+                        }
+                    }
+                    catch (SqlException sqlEx)
+                    {
+                        MessageBox.Show("A database error occurred while loading transactions: " + sqlEx.Message);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An unexpected error occurred while loading transactions: " + ex.Message);
+                    }
+                }
+            }
+        }
+
+
+
+
+-----
+
+ private void UpdateData()
+ {
+     try
+     {
+         using (SqlConnection connection = new SqlConnection(ConnectionString))
+         {
+             // Update the SQL query to select data from the Transactions table
+             SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM Transactions", connection);
+             SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
+             DataTable dataTable = (DataTable)bindingSource?.DataSource;
+
+             if (dataTable != null)
+             {
+                 dataAdapter.UpdateCommand = commandBuilder.GetUpdateCommand();
+                 dataAdapter.Update(dataTable);
+             }
+         }
+         MessageBox.Show("Data updated successfully.");
+     }
+     catch (Exception ex)
+     {
+         MessageBox.Show("An error occurred while updating data: " + ex.Message);
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----
+
+
+
+
+	ALTER PROCEDURE InsertTransaction
+    @UserID INT,
+    @SportID INT,
+    @AmountPaid DECIMAL(10, 2),
+    @DateAndTime DATETIME,
+    @CashierName NVARCHAR(255),
+    @DiscountPercentage DECIMAL(5, 2),
+    @Notes NVARCHAR(MAX),
+    @CheckNumber NVARCHAR(50) -- Added CheckNumber parameter
+AS
+BEGIN
+    -- Start a transaction
+    BEGIN TRY
+        BEGIN TRANSACTION;
+
+        -- Validate the discount percentage
+        IF @DiscountPercentage < 0 OR @DiscountPercentage > 100
+        BEGIN
+            THROW 50000, 'Discount percentage must be between 0 and 100.', 1;
+        END
+
+        -- Validate the amount paid
+        IF @AmountPaid < 0
+        BEGIN
+            THROW 50001, 'Amount paid cannot be negative.', 1;
+        END
+
+        DECLARE @Category NVARCHAR(50);
+        DECLARE @Price DECIMAL(10, 2);
+        DECLARE @DiscountAmount DECIMAL(10, 2);
+        DECLARE @DiscountedPrice DECIMAL(10, 2);
+        DECLARE @VATRate DECIMAL(5, 2) = 0.14;  -- VAT rate of 14%
+        DECLARE @VATAmount DECIMAL(10, 2);
+         DECLARE @RemainingAmount DECIMAL(10, 2);
+
+        -- Get the user's category
+        SELECT @Category = Category 
+        FROM MixedGymDB.dbo.Users 
+        WHERE UserID = @UserID;
+
+        IF @Category IS NULL
+        BEGIN
+            THROW 50004, 'Invalid UserID.', 1;
+        END
+
+        -- Get the price of the sport based on the category
+        SELECT @Price = 
+            CASE 
+                WHEN @Category = 'عضو' THEN MemberPrice
+                WHEN @Category = 'مدني' THEN CivilianPrice
+                WHEN @Category = 'درجة 1' THEN Degree1Price
+                WHEN @Category = 'جيش' THEN MilitaryPrice
+                ELSE NULL
+            END
+        FROM Sports
+        WHERE SportID = @SportID;
+
+        IF @Price IS NULL
+        BEGIN
+            THROW 50002, 'Invalid SportID or Category.', 1;
+        END
+
+        -- Calculate the discount amount and the discounted price (before VAT)
+        SET @DiscountAmount = (@Price * @DiscountPercentage) / 100;
+        SET @DiscountedPrice = @Price - @DiscountAmount;
+
+        -- Calculate the VAT amount based on the discounted price
+        SET @VATAmount = @Price * @VATRate;
+
+       
+
+        -- Calculate the remaining amount
+        SET @RemainingAmount = @Price - @AmountPaid;
+
+        -- Insert the transaction, including the VAT amount
+        INSERT INTO Transactions 
+            (UserID, SportID, AmountPaid, RemainingAmount, DateAndTime, CashierName, DiscountPercentage, Notes, CheckNumber, VATAmount)
+        VALUES 
+            (@UserID, @SportID, @AmountPaid, @RemainingAmount, @DateAndTime, @CashierName, @DiscountPercentage, @Notes, @CheckNumber, @VATAmount);
+
+        -- Commit the transaction
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        -- Rollback the transaction if any error occurs
+        ROLLBACK TRANSACTION;
+        -- Return the error message
+        THROW;
+    END CATCH
+END;
+
+ALTER TABLE [MixedGymDB].[dbo].[Transactions]
+DROP COLUMN [TotalPriceWithVAT];
+
+
+CREATE OR ALTER VIEW vw_TransactionReport AS
+SELECT 
+    T.TransactionID,
+    T.UserID,
+    U.Name AS UserName,
+    T.CheckNumber,
+    S.SportName,
+    CASE 
+        WHEN U.Category = 'عضو' THEN S.MemberPrice
+        WHEN U.Category = 'مدني' THEN S.CivilianPrice
+        WHEN U.Category = 'درجة 1' THEN S.Degree1Price
+        WHEN U.Category = 'جيش' THEN S.MilitaryPrice
+        ELSE NULL
+    END AS SportPrice,
+    U.Category,
+    U.MobileNumber,
+    T.AmountPaid,
+    T.RemainingAmount,
+    T.DiscountPercentage,
+    FORMAT(
+        (CASE 
+            WHEN U.Category = 'عضو' THEN S.MemberPrice
+            WHEN U.Category = 'مدني' THEN S.CivilianPrice
+            WHEN U.Category = 'درجة 1' THEN S.Degree1Price
+            WHEN U.Category = 'جيش' THEN S.MilitaryPrice
+            ELSE 0
+        END * 0.14), 'N2') AS VATAmount,  -- Calculate 14% VAT and format to always show 2 decimal places
+    T.DateAndTime,
+    T.CashierName,
+    T.Notes
+FROM 
+    Transactions T
+INNER JOIN Users U ON T.UserID = U.UserID
+INNER JOIN Sports S ON T.SportID = S.SportID;
+

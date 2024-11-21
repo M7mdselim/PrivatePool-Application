@@ -44,10 +44,10 @@
             // 
             // loadtbtn
             // 
-            this.loadtbtn.BackColor = System.Drawing.Color.Black;
-            this.loadtbtn.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadtbtn.ForeColor = System.Drawing.Color.IndianRed;
-            this.loadtbtn.Location = new System.Drawing.Point(662, 489);
+            this.loadtbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.loadtbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.loadtbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
+            this.loadtbtn.Location = new System.Drawing.Point(662, 474);
             this.loadtbtn.Margin = new System.Windows.Forms.Padding(2);
             this.loadtbtn.Name = "loadtbtn";
             this.loadtbtn.Size = new System.Drawing.Size(180, 68);
@@ -58,14 +58,14 @@
             // 
             // backButton
             // 
-            this.backButton.BackColor = System.Drawing.Color.Black;
-            this.backButton.BackgroundImage = global::Private_Pool_Application.Properties.Resources._153_1531682_open_red_back_button_png;
+            this.backButton.BackColor = System.Drawing.Color.Transparent;
+            this.backButton.BackgroundImage = global::Private_Pool_Application.Properties.Resources.icons8_back_button_502;
             this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.backButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.backButton.ForeColor = System.Drawing.Color.IndianRed;
-            this.backButton.Location = new System.Drawing.Point(5, 10);
+            this.backButton.Location = new System.Drawing.Point(14, 17);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(70, 56);
+            this.backButton.Size = new System.Drawing.Size(70, 61);
             this.backButton.TabIndex = 30;
             this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
@@ -74,20 +74,20 @@
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.titleLabel.Font = new System.Drawing.Font("Arial", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.ForeColor = System.Drawing.Color.Red;
-            this.titleLabel.Location = new System.Drawing.Point(281, 39);
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.titleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.titleLabel.Location = new System.Drawing.Point(267, 19);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(287, 44);
+            this.titleLabel.Size = new System.Drawing.Size(287, 42);
             this.titleLabel.TabIndex = 28;
-            this.titleLabel.Text = "تعديل بيانات الشخصيه";
+            this.titleLabel.Text = "تعديل بيانات الشخصية";
             // 
             // updatebtn
             // 
-            this.updatebtn.BackColor = System.Drawing.Color.Black;
-            this.updatebtn.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatebtn.ForeColor = System.Drawing.Color.IndianRed;
-            this.updatebtn.Location = new System.Drawing.Point(21, 489);
+            this.updatebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.updatebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.updatebtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
+            this.updatebtn.Location = new System.Drawing.Point(21, 474);
             this.updatebtn.Margin = new System.Windows.Forms.Padding(2);
             this.updatebtn.Name = "updatebtn";
             this.updatebtn.Size = new System.Drawing.Size(180, 68);
@@ -99,18 +99,17 @@
             // usersDataGridView
             // 
             this.usersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.usersDataGridView.Location = new System.Drawing.Point(21, 102);
+            this.usersDataGridView.Location = new System.Drawing.Point(14, 102);
             this.usersDataGridView.Name = "usersDataGridView";
-            this.usersDataGridView.Size = new System.Drawing.Size(821, 353);
+            this.usersDataGridView.Size = new System.Drawing.Size(835, 353);
             this.usersDataGridView.TabIndex = 33;
-           // this.usersDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.usersDataGridView_CellContentClick);
             // 
             // updatetransbtn
             // 
-            this.updatetransbtn.BackColor = System.Drawing.Color.Black;
-            this.updatetransbtn.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatetransbtn.ForeColor = System.Drawing.Color.IndianRed;
-            this.updatetransbtn.Location = new System.Drawing.Point(704, 16);
+            this.updatetransbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.updatetransbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.updatetransbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
+            this.updatetransbtn.Location = new System.Drawing.Point(704, 9);
             this.updatetransbtn.Margin = new System.Windows.Forms.Padding(2);
             this.updatetransbtn.Name = "updatetransbtn";
             this.updatetransbtn.Size = new System.Drawing.Size(146, 41);
@@ -121,7 +120,7 @@
             // 
             // nametxt
             // 
-            this.nametxt.Location = new System.Drawing.Point(368, 508);
+            this.nametxt.Location = new System.Drawing.Point(294, 506);
             this.nametxt.Name = "nametxt";
             this.nametxt.Size = new System.Drawing.Size(274, 20);
             this.nametxt.TabIndex = 35;
@@ -130,10 +129,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(503, 489);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.label1.Location = new System.Drawing.Point(366, 474);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 16);
+            this.label1.Size = new System.Drawing.Size(117, 20);
             this.label1.TabIndex = 36;
             this.label1.Text = "بحث عن طريق الاسم";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -142,8 +142,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(861, 598);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(861, 552);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nametxt);
             this.Controls.Add(this.updatetransbtn);

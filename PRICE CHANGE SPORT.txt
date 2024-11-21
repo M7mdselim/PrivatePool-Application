@@ -1,0 +1,208 @@
+UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 300 THEN 307.5 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 300 THEN 307.5 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 300 THEN 307.5 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 300 THEN 307.5 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 300 OR 
+    [CivilianPrice] = 300 OR 
+    [Degree1Price] = 300 OR 
+    [MilitaryPrice] = 300;
+
+
+
+	  UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 800 THEN 807.02 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 800 THEN 807.02 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 800 THEN 807.02 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 800 THEN 807.02 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 800 OR 
+    [CivilianPrice] = 800 OR 
+    [Degree1Price] = 800 OR 
+    [MilitaryPrice] = 800;
+
+
+	  UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 175 THEN 175.44 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 175 THEN 175.44 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 175 THEN 175.44 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 175 THEN 175.44 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 175 OR 
+    [CivilianPrice] = 175 OR 
+    [Degree1Price] = 175 OR 
+    [MilitaryPrice] = 175;
+
+
+
+	  UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 100 THEN 105.26 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 100 THEN 105.26 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 100 THEN 105.26 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 100 THEN 105.26 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 100 OR 
+    [CivilianPrice] = 100 OR 
+    [Degree1Price] = 100 OR 
+    [MilitaryPrice] = 100;
+
+
+		  UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 50 THEN 52.36 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 50 THEN 52.36 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 50 THEN 52.36 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 50 THEN 52.36 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 50 OR 
+    [CivilianPrice] = 50 OR 
+    [Degree1Price] = 50 OR 
+    [MilitaryPrice] = 50;
+
+
+
+	  UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 2625 THEN 2631.85 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 2625 THEN 2631.85 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 2625 THEN 2631.85 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 2625 THEN 2631.85 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 2625 OR 
+    [CivilianPrice] = 2625 OR 
+    [Degree1Price] = 2625 OR 
+    [MilitaryPrice] = 2625;
+
+
+
+
+	  UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 375 THEN 378.95 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 375 THEN 378.95 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 375 THEN 378.95 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 375 THEN 378.95 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 375 OR 
+    [CivilianPrice] = 375 OR 
+    [Degree1Price] = 375 OR 
+    [MilitaryPrice] = 375;
+
+
+	 UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 112.5 THEN 114.04 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 112.5 THEN 114.04 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 112.5 THEN 114.04 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 112.5 THEN 114.04 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 112.5  OR 
+    [CivilianPrice] = 112.5  OR 
+    [Degree1Price] = 112.5  OR 
+    [MilitaryPrice] = 112.5 ;
+
+
+
+
+		  UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 187.5 THEN 192.98 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 187.5 THEN 192.98 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 187.5 THEN 192.98 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 187.5 THEN 192.98 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 187.5 OR 
+    [CivilianPrice] = 187.5 OR 
+    [Degree1Price] = 187.5 OR 
+    [MilitaryPrice] = 187.5;
+
+
+
+
+		  UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 225 THEN 228.07 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 225 THEN 228.07 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 225 THEN 228.07 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 225 THEN 228.07 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 225 OR 
+    [CivilianPrice] = 225 OR 
+    [Degree1Price] = 225 OR 
+    [MilitaryPrice] = 225;
+
+
+
+	UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 200 THEN 201.75 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 200 THEN 201.75 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 200 THEN 201.75 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 200 THEN 201.75 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 200 OR 
+    [CivilianPrice] = 200 OR 
+    [Degree1Price] = 200 OR 
+    [MilitaryPrice] = 200;
+
+
+
+	UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 150 THEN 157.89 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 150 THEN 157.89 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 150 THEN 157.89 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 150 THEN 157.89 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 150 OR 
+    [CivilianPrice] = 150 OR 
+    [Degree1Price] = 150 OR 
+    [MilitaryPrice] = 150;
+
+
+
+	UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 400 THEN 403.51 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 400 THEN 403.51 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 400 THEN 403.51 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 400 THEN 403.51 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 400 OR 
+    [CivilianPrice] = 400 OR 
+    [Degree1Price] = 400 OR 
+    [MilitaryPrice] = 400;
+
+
+
+	
+	UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 10 THEN 13.16 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 10 THEN 13.16 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 10 THEN 13.16 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 10 THEN 13.16 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 10 OR 
+    [CivilianPrice] = 10 OR 
+    [Degree1Price] = 10 OR 
+    [MilitaryPrice] = 10;
+
+
+	
+	UPDATE [MalaabDB].[dbo].[Sports]
+SET 
+    [MemberPrice] = CASE WHEN [MemberPrice] = 65 THEN 65.79 ELSE [MemberPrice] END,
+    [CivilianPrice] = CASE WHEN [CivilianPrice] = 65 THEN 65.79 ELSE [CivilianPrice] END,
+    [Degree1Price] = CASE WHEN [Degree1Price] = 65 THEN 65.79 ELSE [Degree1Price] END,
+    [MilitaryPrice] = CASE WHEN [MilitaryPrice] = 65 THEN 65.79 ELSE [MilitaryPrice] END
+WHERE 
+    [MemberPrice] = 65 OR 
+    [CivilianPrice] = 65 OR 
+    [Degree1Price] = 65 OR 
+    [MilitaryPrice] = 65;

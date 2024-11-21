@@ -346,6 +346,7 @@
   <ItemGroup>
     <Content Include="Fun-run-people-logo.ico" />
     <Content Include="logoo.ico" />
+    <None Include="Resources\pngtree-info-vector-icon-png-image_470297.jpg" />
     <None Include="Resources\App Poster.png" />
     <None Include="Resources\App Poster.jpg" />
     <Content Include="Resources\icons8-back-button-502.png" />
@@ -355,7 +356,7 @@
     <None Include="Resources\Fun run people logo %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="F:\lol\MixedGym-Application\SqlConfigApp\SqlConfigApp.csproj">
+    <ProjectReference Include="..\SqlConfigApp\SqlConfigApp.csproj">
       <Project>{8c3fb1a1-6543-4193-a34c-ef9abbfcd5a2}</Project>
       <Name>SqlConfigApp</Name>
     </ProjectReference>

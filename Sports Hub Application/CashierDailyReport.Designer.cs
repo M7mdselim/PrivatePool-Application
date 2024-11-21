@@ -104,11 +104,11 @@ namespace Private_Pool_Application
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
-            this.label1.Location = new System.Drawing.Point(370, 49);
+            this.label1.Location = new System.Drawing.Point(351, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 34);
+            this.label1.Size = new System.Drawing.Size(204, 34);
             this.label1.TabIndex = 46;
-            this.label1.Text = "Mixed GYM";
+            this.label1.Text = "Private Pool";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // backButton
